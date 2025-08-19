@@ -1,0 +1,11 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+public class ATMSystem {
+   public ATMSystem() {
+   }
+
+   public static void main(String[] var0) {
+      BankAccount var1 = new BankAccount(5000.0);
+      ATM var2 = new ATM(var1);
+      var2.start();
+   }
+}
