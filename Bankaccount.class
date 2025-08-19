@@ -1,0 +1,30 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+class BankAccount {
+   private double balance;
+
+   public BankAccount(double var1) {
+      this.balance = var1;
+   }
+
+   public double getBalance() {
+      return this.balance;
+   }
+
+   public boolean withdraw(double var1) {
+      if (var1 > 0.0 && var1 <= this.balance) {
+         this.balance -= var1;
+         return true;
+      } else {
+         return false;
+      }
+   }
+
+   public boolean deposit(double var1) {
+      if (var1 > 0.0) {
+         this.balance += var1;
+         return true;
+      } else {
+         return false;
+      }
+   }
+}
